@@ -13,6 +13,7 @@ const resetEl = document.getElementById("reset")
 
 sendEl.addEventListener('click', function () {
     console.log("cliccato");
+    document.getElementById("cardTicket").className = 'col d-block'
     const userNameValue = document.getElementById("userName").value
     const kilometersToGoValue = Number(document.getElementById("kilometersToGo").value)
     const userAgeValue = (document.getElementById("userAge").value)
