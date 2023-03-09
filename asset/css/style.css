@@ -1,0 +1,28 @@
+:root{
+    --primary : #b91450;
+}
+
+body {
+    background-color: var(--primary);
+
+}
+.calc{
+    color: var(--primary);
+
+}
+.borderinp{
+    border-color: var(--primary);
+    border-width: 1px;
+    border-style: solid;
+}
+select{
+    border-color: var(--primary);
+    border-width: 1px;
+    border-style: solid;
+}
+button {
+    color: var(--primary);
+}
+.name{
+    background-color: gray;
+}

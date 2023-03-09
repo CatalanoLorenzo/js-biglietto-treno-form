@@ -15,28 +15,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card">
+    <h2 class="text-center text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="container d-flex justify-content-center">
+        <div class="row flex-column">
+            <div class="col calc">
+                <div class="card p-4">
                     <div class="container">
                         <div class="row flex-column ">
                             <div class="col d-flex gap-5 justify-content-center py-3">
                                 <div>
                                     <p class="">Nome Cognome</p>
-                                    <input type="text" id="userName" class=" border border-1 rounded-2">
+                                    <div>
+                                        <input type="text" id="userName" class=" borderinp rounded-1">
+                                    </div>
                                 </div>
                                 <div>
                                     <p class="">Km da percorrere</p>
-                                    <input type="text" id="kilometersToGo" class=" border border-1 rounded-2">
+                                    <div class=" borderinp rounded-1">
+                                        <input type="text" id="kilometersToGo" class=" border-0">
+                                    </div>
                                 </div>
                                 <div>
                                     <p class="">Facia d'età</p>
-                                    <select name="Età" id="userAge" class=" border border-1 rounded-2">
-                                        <option value="Maggiorenne">Maggiorenne</option>
-                                        <option value="Minorenne">Minorenne</option>
-                                        <option value="Over60">Over60</option>
-                                    </select>
+                                    <div class=" borderinp rounded-1">
+                                        <select name="Età" id="userAge" >
+                                            <option value="Maggiorenne">Maggiorenne</option>
+                                            <option value="Minorenne">Minorenne</option>
+                                            <option value="Over60">Over60</option>
+                                        </select>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="col d-flex gap-5 justify-content-center py-3">
@@ -48,7 +56,7 @@
 
                 </div>
             </div>
-            <div class="col d-none" id="cardTicket">
+            <div class="col d-none p-4 text-black" id="cardTicket">
                 <h2 class="text-center text-white">IL TUO BIGLIETTO</h2>
                 <div class="card " >
                     <div class="card-header">
@@ -56,24 +64,24 @@
                     </div>
                     <div class="card-body d-flex">
                         <hr>
-                        <div class="p-2">
-                            <p>Nome Passeggero</p>
+                        <div class="p-2 name">
+                            <p class="fw-bold">Nome Passeggero</p>
                             <p id="userName_display"></p>
                         </div>
                         <div class="p-2">
-                            <p>Offerta</p>
+                            <p class="fw-bold">Offerta</p>
                             <p>Biglietto <span id="typeSald"></span></p>
                         </div>
                         <div class="p-2">
-                            <p>Carrozza</p>
+                            <p class="fw-bold">Carrozza</p>
                             <p id="numberWagon" class="text-center"></p>
                         </div>
                         <div class="p-2">
-                            <p>Codice CP</p>
+                            <p class="fw-bold">Codice CP</p>
                             <p id="codeCP" class="text-center"></p>
                         </div>
                         <div class="p-2">
-                            <p>Costo biglietto</p>
+                            <p class="fw-bold">Costo biglietto</p>
                             <p><span id="costo_display"></span> €</p>
                         </div>
                         <hr>
@@ -83,18 +91,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-    <div>
-        
-    </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
