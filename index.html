@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/css/style.css">
 
 
 
 </head>
+
 <body>
-        <div>
-            <h2>Nome Cognome</h2>
-            <input type="text" id="userName"> 
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="row flex-column ">
+                            <div class="col d-flex gap-5 justify-content-center py-3">
+                                <div>
+                                    <p class="">Nome Cognome</p>
+                                    <input type="text" id="userName" class=" border border-1 rounded-2">
+                                </div>
+                                <div>
+                                    <p class="">Km da percorrere</p>
+                                    <input type="text" id="kilometersToGo" class=" border border-1 rounded-2">
+                                </div>
+                                <div>
+                                    <p class="">Facia d'età</p>
+                                    <select name="Età" id="userAge" class=" border border-1 rounded-2">
+                                        <option value="Maggiorenne">Maggiorenne</option>
+                                        <option value="Minorenne">Minorenne</option>
+                                        <option value="Over60">Over60</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col d-flex gap-5 justify-content-center py-3">
+                                <button id="send" class=" border border-1 rounded-2">Genera</button>
+                                <button id="reset" class=" border border-1 rounded-2">Annulla</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <div class="card-header">
+                        <p>Dettaglio Passeggeri</p>
+                    </div>
+                    <div class="card-body d-flex">
+                        <hr>
+                        <div>
+                            <p>Nome Passeggero</p>
+                            <p id="userName_display"></p>
+                        </div>
+                        <div>
+                            <p>Offerta</p>
+                            <p>Biglietto <span id="typeSald"></span></p>
+                        </div>
+                        <div>
+                            <p>Carrozza</p>
+                            <p id="numberWagon"></p>
+                        </div>
+                        <div>
+                            <p>Codice CP</p>
+                            <p id="codeCP"></p>
+                        </div>
+                        <div>
+                            <p>Costo biglietto</p>
+                            <p><span id="costo_display"></span> €</p>
+                        </div>
+                        <hr>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2>Km da percorrere</h2>
-            <input type="text" id="kilometersToGo">
-        </div>
-        <div>
-            <h2>Facia d'età</h2>
-            <select name="Età" id="userAge">
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Minorenne">Minorenne</option>
-                <option value="Over60">Over60</option>
-            </select>
-        </div>
-        <button id="send">Genera</button>
-        <button id="reset">Annulla</button>
- 
+    </div>
 
 
 
 
 
-        <div>
-            <div>
-                <h2>Nome Passeggero</h2>
-                <h3 id="userName_display"></h3>
-            </div>
-            <div>
-                <h3>Offerta</h3>
-                <h3>Biglietto <span id="typeSald"></span></h3>
-            </div>
-            <div>
-                <h3>Carrozza</h3>
-                <h3 id="numberWagon"></h3>
-            </div>
-            <div>
-                <h3>Codice CP</h3>
-                <h3 id="codeCP"></h3>
-            </div>
-            <div>
-                <h3>Costo biglietto</h3>
-                <h3><span id="costo_display"></span> €</h3>
-            </div>
-
-        </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <div>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="./asset/js/main.js"></script>
 </body>
+
 </html>
